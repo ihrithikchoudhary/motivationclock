@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Arya:wght@400;700&family=Hind:wght@300;400;500;600;700&family=Homemade+Apple&family=Playwrite+DE+VA+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=League+Gothic&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: #000;
+}
+
+#timebox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    height: 100vh;
+    user-select: none;
+    cursor: text;
+}
+
+@media (max-width: 768px) {
+    #timebox {
+        padding: 0.5rem;
+        height: auto;
+    }
+
+    #todaytime {
+        padding: 1rem;
+        height: auto;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #hh,
+    #mm,
+    #ss {
+        font-size: 20vw;
+        width: 100%;
+        height: 40vw;
+    }
+
+    #ampm {
+        font-size: 4vw;
+        position: relative;
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-top: 30px;
+    }
+
+    #weather_updates {
+        left: 1rem;
+        top: 1rem;
+        width: auto;
+    }
+
+    #weather_updates img {
+        height: 40px;
+    }
+
+    #weather_updates .card #temp {
+        font-size: 5px;
+    }
+}
+
+#todaytime {
+    display: flex;
+    gap: 4px;
+    float: left;
+    align-items: center;
+    justify-content: space-between;
+    color: blue;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #302c2c00;
+    margin: 1rem;
+    width: 100%;
+    padding: 4rem;
+    border-radius: 8px;
+    backdrop-filter: blur(15px);
+    height: 80vh;
+}
+
+#hh,
+#mm,
+#ss {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    margin-left: 1rem;
+    font-size: 15vw;
+    background-color: #302c2c21;
+    overflow: hidden;
+    padding: 4px;
+    white-space: 0;
+    border-radius: 12px;
+    box-shadow: 0 8px #888;
+    cursor: none;
+    user-select: none;
+    width: 100%;
+}
+
+#hh,
+#mm {
+    color: white;
+    letter-spacing: 2px;
+}
+
+#ss {
+    color: rgba(227, 221, 221, 0.897);
+    letter-spacing: 2px;
+}
+
+#ampm {
+    position: absolute;
+    font-size: 5vw;
+    padding: 4px;
+    color: rgba(255, 255, 255, 0.485);
+    margin-left: 1rem;
+    background-color: #302c2c21;
+    bottom: 0;
+    margin-bottom: 1rem;
+    padding: 0px 20px;
+    border-radius: 10px;
+}
+
+#footer {
+    color: #88888889;
+    display: flex;
+    float: left;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 4px;
+    border-top: 1px solid #8888883b;
+    font-size: .8rem;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #88888891;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 2px;
+}
+
+@font-face {
+    font-family: 'digital-clock-font';
+    src: url('put_the_location_to_your_font.ttf or .otf');
+}
+
+#weather_updates {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: #302c2c21;
+    width: 200px;
+    position: absolute;
+    left: 6rem;
+    top: 5rem;
+    z-index: 1111;
+    overflow: hidden;
+    border-radius: 15px;
+    color: #fff;
+    gap: 2px;
+    font-family: "Sacramento", cursive;
+}
+
+#weather_updates img {
+    height: 60px;
+    margin-right: 1rem;
+    padding: 8px;
+}
+
+#weather_updates .card {
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 12px;
+    text-align: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+#weather_updates .card #temp {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#city {
+    font-size: 10px;
+    display: none;
+}
+
+#status {
+    font-size: 12px;
+}
+
+
+#timebox .quote-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 60px;
+    color: #ffffff52;
+    position: absolute;
+    right: 2rem;
+    font-size: 18px;
+    bottom: 18px;
+}
+
+#quote{
+    width: 100%;
+    padding: 4px;
+    text-align: right;
+}
+
+.flow-text {
+  /* Gradient background */
+  background: linear-gradient(
+    90deg,
+    /* #22d3ee,
+    #a855f7,
+    #ec4899,
+    #22d3ee */
+    #888,
+    #888,
+    #8888,
+    #ddd
+  );
+
+  background-size: 300% 100%;
+
+  /* Clip text */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  /* Animation */
+  animation: flow 5s linear infinite;
+}
+
+@keyframes flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
