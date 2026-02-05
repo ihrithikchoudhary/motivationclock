@@ -1,12 +1,58 @@
+/*
+PROPRIETARY LICENSE – ALL RIGHTS RESERVED
+
+Copyright (c) 2026 Hrithik Choudhary
+All rights reserved.
+
+This software, including but not limited to its source code, compiled output,
+design, structure, logic, text, graphics, and any associated assets
+(collectively, the “Project”), is the exclusive intellectual property of
+Hrithik Choudhary.
+
+PERMISSIONS
+You are permitted to:
+- View this Project and its publicly accessible output for personal,
+  non-commercial reference only.
+
+RESTRICTIONS
+You are NOT permitted to, without prior written permission from the author:
+- Copy, reproduce, or duplicate the Project or any part of it
+- Modify, adapt, translate, or create derivative works
+- Redistribute, sublicense, publish, or share the code or design
+- Use the Project or its logic in personal, academic, or commercial projects
+- Deploy this Project or any modified version on another website, platform,
+  or application
+- Use the Project for training, benchmarking, or reference in AI models
+- Claim authorship or remove copyright notices
+
+NO LICENSE GRANT
+This license does NOT grant you any ownership rights, patent rights, or
+intellectual property rights. Access to the Project does not imply permission
+to reuse it in any form.
+
+ENFORCEMENT
+Any unauthorised use of this Project constitutes a violation of intellectual
+property laws and may result in legal action, including claims for damages
+and injunctive relief.
+
+DISCLAIMER
+This Project is provided “AS IS”, without warranty of any kind, express or
+implied, including but not limited to the warranties of merchantability,
+fitness for a particular purpose, and non-infringement. The author shall not
+be liable for any damages arising from the use or inability to use this
+Project.
+
+CONTACT
+For permission requests or licensing inquiries, contact the author directly.
+END OF LICENSE 
+*/
+
 function updateTime() {
     const now = new Date();
 
     const hours = String(now.getHours()).padStart(2, "0");
     const minutes = String(now.getMinutes()).padStart(2, "0");
     const seconds = String(now.getSeconds()).padStart(2, "0");
-
-    // document.getElementById("todaytime").textContent =
-    //   `${hours}:${minutes}:${seconds}`;
 
     document.getElementById("hh").textContent = `${hours}`;
     document.getElementById("mm").textContent = `${minutes}`;
@@ -29,9 +75,6 @@ function checkampm() {
 
 checkampm();
 setInterval(checkampm, 1000);
-
-
-//weather updates
 
 if (!navigator.geolocation) {
     document.getElementById("status").innerText =
@@ -70,17 +113,9 @@ function error() {
         "Location permission denied";
 }
 
-
-
-
-
-// Daily Qoutes
 const API_URL = "https://zenquotes.io/api/random";
 const STORAGE_KEY = "daily_quote_v1";
 
-/* ===============================
-   LOCAL FALLBACK (IMPORTANT)
-   =============================== */
 const localQuotes = [
     { q: "Discipline beats motivation every time.", a: "Unknown" },
     { q: "Consistency is more powerful than talent.", a: "Unknown" },
@@ -101,8 +136,7 @@ function showQuote(q, a) {
 async function loadDailyQuote() {
     const today = todayKey();
     const cached = localStorage.getItem(STORAGE_KEY);
-
-    // Use cached quote if it's from today
+    
     if (cached) {
         const data = JSON.parse(cached);
         if (data.date === today) {
@@ -110,8 +144,7 @@ async function loadDailyQuote() {
             return;
         }
     }
-
-    // Otherwise fetch new quote
+    
     try {
         const res = await fetch(API_URL, { cache: "no-store" });
         if (!res.ok) throw new Error("API failed");
@@ -127,10 +160,10 @@ async function loadDailyQuote() {
         showQuote(quote.q, quote.a);
 
     } catch (err) {
-        // Fallback if API fails
         const r = localQuotes[Math.floor(Math.random() * localQuotes.length)];
         showQuote(r.q, r.a);
     }
 }
+
 
 loadDailyQuote();
