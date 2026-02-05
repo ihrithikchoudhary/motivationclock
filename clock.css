@@ -34,11 +34,12 @@ body {
 
 @media (max-width: 768px) {
     #timebox {
+        display: none;
         padding: 0.5rem;
         height: auto;
     }
 
-    #todaytime {
+    /* #todaytime {
         padding: 1rem;
         height: auto;
         flex-direction: column;
@@ -73,7 +74,7 @@ body {
 
     #weather_updates .card #temp {
         font-size: 5px;
-    }
+    } */
 }
 
 #todaytime {
@@ -268,4 +269,5 @@ body {
   100% {
     background-position: 300% 50%;
   }
+
 }
