@@ -262,8 +262,26 @@ body {
   100% {
     background-position: 300% 50%;
   }
-
 }
+#displayalert {
+  display: none;
+  background: #11111150;
+  color: #fff;
+  padding: 12px 16px;
+  text-align: center;
+  margin: 1rem;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 767px) {
+  #displayalert {
+    display: block;
+    max-width: 300px;
+  }
+}
+
+
 
 
 
