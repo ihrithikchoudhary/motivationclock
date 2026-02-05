@@ -238,7 +238,6 @@ body {
 }
 
 .flow-text {
-  /* Gradient background */
   background: linear-gradient(
     90deg,
     /* #22d3ee,
@@ -252,13 +251,9 @@ body {
   );
 
   background-size: 300% 100%;
-
-  /* Clip text */
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-
-  /* Animation */
   animation: flow 5s linear infinite;
 }
 
@@ -271,3 +266,4 @@ body {
   }
 
 }
+
