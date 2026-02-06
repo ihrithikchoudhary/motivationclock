@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "build": "vite build && npx javascript-obfuscator dist/assets --output dist/assets --config obfuscator.json"
+  }
+}
