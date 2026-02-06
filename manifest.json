@@ -17,4 +17,13 @@
       "type": "https://cdn.delivr.net/gh/ihrithikchoudhary/motivationclock/alarm-clock.png"
     }
   ]
+  "compact": true,
+  "controlFlowFlattening": true,
+  "controlFlowFlatteningThreshold": 0.7,
+  "deadCodeInjection": true,
+  "deadCodeInjectionThreshold": 0.4,
+  "stringArray": true,
+  "stringArrayEncoding": ["base64"],
+  "selfDefending": true,
+  "disableConsoleOutput": true
 }
