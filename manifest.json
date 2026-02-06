@@ -1,20 +1,20 @@
 {
   "name": "Motivation Clock",
   "short_name": "Clock",
-  "start_url": "/motivationclock",
+  "start_url": "https://ihrithikchoudhary.github.io/motivationclock",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#1a73e8",
   "icons": [
     {
-      "src": "/alarm-clock.png",
+      "src": "https://cdn.delivr.net/gh/ihrithikchoudhary/motivationclock/alarm-clock.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
       "src": "/alarm-clock.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "https://cdn.delivr.net/gh/ihrithikchoudhary/motivationclock/alarm-clock.png"
     }
   ]
 }
