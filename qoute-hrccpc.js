@@ -5,6 +5,11 @@ const localQuotes = [
     { q: "Discipline beats motivation every time.", a: "Unknown" },
     { q: "Consistency is more powerful than talent.", a: "Unknown" },
     { q: "Comfort is the enemy of growth.", a: "Unknown" },
+    { q: "You can meet a better you"},
+    { q: "Be loyal to your future, not your past"},
+    { q: "A new day to try again."},
+     { q: "A great future doesn't require a great past"},
+     { q: "Thanks for using this digital clock: Hrithik Choudhary", a: "Hrithik Choudhary"},
     { q: "Results come from systems, not wishes.", a: "Unknown" }
 ];
 
