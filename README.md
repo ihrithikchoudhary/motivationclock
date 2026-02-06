@@ -1,5 +1,18 @@
-# motivationclock
-Motivation Clock with Weather Update 
+## Hi, I’m Hrithik 👋
+
+I’m a frontend-focused developer working with  
+HTML, CSS, JavaScript, and browser-based apps.
+
+### Projects
+- ⏰ Motivation Clock
+- 🌐 UI experiments
+- 🧩 Small web tools
+
+### Focus
+- Clean UI
+- Performance
+- Practical learning
+
 
 <bold>Usage Disclaimer:</bold> 
 This project is published for demonstration and learning purposes only.
