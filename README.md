@@ -14,7 +14,8 @@ HTML, CSS, JavaScript, and browser-based apps.
 - Practical learning
 
 
-<bold>Usage Disclaimer:</bold> 
+##<bold>Usage Disclaimer:</bold> 
+
 This project is published for demonstration and learning purposes only.
 The source code, logic, and design may not be copied, redistributed, or used in other projects without prior written permission from the author.
 All code, design, and content on this website are protected.
