@@ -3,8 +3,8 @@
   "short_name": "Clock",
   "start_url": "https://ihrithikchoudhary.github.io/motivationclock",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#1a73e8",
+  "background_color": "#000",
+  "theme_color": "#000",
   "icons": [
     {
       "src": "https://cdn.delivr.net/gh/ihrithikchoudhary/motivationclock/alarm-clock.png",
